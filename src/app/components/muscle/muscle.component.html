@@ -1,0 +1,19 @@
+<div>
+  <ul>
+    <li *ngFor="let muscle of muscles">
+      <div>
+        <a class="" (click)="verEjercicios(muscle.nombre)" >       
+        <img
+          src="{{
+            url + 'image/' + muscle.imagenes[0].toString() + '/muscles'
+          }}"
+          alt=""
+          style="width: 100px"
+        /></a>
+        {{ muscle.nombre | uppercase }}
+        <hr />
+        
+      </div>
+    </li>
+  </ul>
+</div>
